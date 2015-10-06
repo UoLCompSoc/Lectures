@@ -40,7 +40,7 @@ This command prints the **P**resent **W**orking **D**irectory, so if you have ju
 
 Any command executeed in the terminal will be executed relative to your present working directory.
 
-```bash
+```console
 $pwd
 /s_home/<username>/
 ```
@@ -48,7 +48,7 @@ $pwd
 ### ls
 This command lists the files/directories that are contained in the present working directory. If you run this command in your terminal now, it should print something similar to:
 
-```bash
+```console
 $ls
 ./
 ../
@@ -60,13 +60,13 @@ Currently this command will only print the files and directories, however you ca
 
 Use can use this command to list all of the files and folders including those hidden and special files/folders.
 
-```bash
+```console
 $ls -a
 ```
 
 You can also list the contents of a given directory: Example:
 
-```bash
+```console
 $ls Downloads
 first_download.pdf
 second_file.txt
@@ -83,32 +83,32 @@ The ../ director is a directory that points to the parent of the current working
 This command allows you to change the present working directory.
 Example:
 
-```bash
+```console
 $pwd
 /s_home/as784/
 ```
 
-```bash
+```console
 $cd public_html
 ```
 
-```bash
+```console
 $pwd
 /s_home/as784/public_html/
 ```
 
 You can also use the special directory names, the ../ is commonly used to move one director up. Example:
 
-```bash
+```console
 $pwd
 /s_home/as784/public_html/
 ```
 
-```bash
+```console
 $cd ..
 ```
 
-```bash
+```console
 $pwd
 /s_home/as784/
 ```
@@ -117,17 +117,17 @@ $pwd
 ### mkdir
 This command allows you to create a directory relative to the present working directory. Example:
 
-```bash
+```console
 $ls
 Downloads/
 public_html/
 ```
 
-```bash
+```console
 $mkdir Lectures
 ```
 
-```bash
+```console
 $ls
 Downloads/
 Lectures/
@@ -138,18 +138,18 @@ public_html/
 ### touch
 This command creates a new file with the given name. Example:
 
-```bash
+```console
 $ls
 Downloads/
 Lectures/
 public_html/
 ```
 
-```bash
+```console
 $touch oldlecture
 ```
 
-```bash
+```console
 $ls
 Downloads/
 Lectures/
@@ -160,7 +160,7 @@ public_html/
 ### mv
 This command moves the specified file/directory to the specified new location.
 
-```bash
+```console
 $ls
 Downloads/
 Lectures/
@@ -168,11 +168,11 @@ oldlecture
 public_html/
 ```
 
-```bash
+```console
 $mv oldlecture Lectures/
 ```
 
-```bash
+```console
 $ls
 Downloads/
 Documents/
@@ -180,7 +180,7 @@ Lectures/
 public_html/
 ```
 
-```bash
+```console
 $ls Lectures/
 oldlecture
 ```
@@ -188,20 +188,20 @@ oldlecture
 ### cp
 This command can be used to make a copy of a file or directory. Example:
 
-```bash
+```console
 $cd Lectures
 ```
 
-```bash
+```console
 $ls
 oldlecture
 ```
 
-```bash
+```console
 $cp oldlecture newlecture
 ```
 
-```bash
+```console
 $ls
 oldlecture
 newlecture
@@ -210,17 +210,17 @@ newlecture
 ### rm
 This command can be used to remove files/directories. Example:
 
-```bash
+```console
 $ls
 newlecture
 oldlecture
 ```
 
-```bash
+```console
 $rm oldlecture
 ```
 
-```bash
+```console
 $ls
 newlecture
 
