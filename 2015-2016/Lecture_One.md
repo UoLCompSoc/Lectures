@@ -3,7 +3,10 @@
 ---
 
 ## What is Linux?
-Linux is an alternative to the Windows operating system. It comes in lots of different versions and the version that we use here at university is called **Ubuntu**
+Linux is an alternative to the Windows operating system. It comes in lots of different versions and the version that we use here at university is called **Ubuntu**.
+
+It's a piece of free and open source software that we highly recommend that you get familar with. 
+Its also easy to install along side your already existing Window Install, giving you a great programming environment that is very similar to the University's but still with easy access to your existing files.
 
 ---
 
@@ -12,20 +15,23 @@ Linux is an alternative to the Windows operating system. It comes in lots of dif
 ---
 
 ### The Dock
-The bar on the left hand side of the screen contains a list of some of your most used and favourited applications
+The bar on the left hand side of the screen contains a list of your applications that are locked to it, you can lock any application to this dock.
 
 ---
 
 ### The Dash
-This can be openned by clicking the top icon in the dock
-This interface allows you to search through all of your installed applications
+This interface allows you to search through all of your installed applications.
+
+It can be openned by clicking the icon at the top of the dock.
+
 **_Open the dash and search for the terminal application and open it_**
 
 ---
 
 ### The Terminal
-This program presents you with a command line interface that allows you to execute commands on your machine
+This application presents you with a command line interface that allows you to execute commands on your machine.
 
+You should try to become familar with the Terminal as it plays an important part in software development. 
 ---
 
 ## Linux File Structure
@@ -33,18 +39,31 @@ This program presents you with a command line interface that allows you to execu
 ---
 
 ### Where is the C:\ drive?
-In Linux there are no labels attached to drives of the computer, so there is no C:\ or D:\ or E:\ drive. Instead Linux has a filesystem that starts with just a /
+In Linux there are no labels attached to drives of the computer, so there is no C:\ or D:\ or E:\ drive. 
+
+Instead Linux has a filesystem that starts with just a /
+
 Beneath this root / you can have any number of files/directories.
 
----
+Example:
+```console
+/
+/dev/
+/dev/sda
+/dev/sdb
+/home/
+/home/<username>
+/tmp/
+```
 
-### Files and Directories
-Everything in linux is stored as a file or a directory. This includes any internal and external devices attached to the computer, for example, internal hard drives are stored as /dev/sda, /dev/sdb, /dev/sdc.
+Everything in linux is stored as a file or a directory. This includes any internal and external devices attached to the computer, for example, internal hard drives are stored as /dev/sda, /dev/sdb, etc.
 
 ---
 
 ### Home Directory
-The most relavent one to you is the /home/<username>/directory, however on the University machines the home directory is the /s_home/<username>/directory
+The most relavent one directory to you is your home directory, is has the path /home/<username>/, however on the University machines the home directory is the /s_home/<username>/
+
+This is where you will do all of your work and where all of your documents are stored.
 
 ---
 
@@ -55,8 +74,9 @@ The most relavent one to you is the /home/<username>/directory, however on the U
 ### pwd
 This command prints the **P**resent **W**orking **D**irectory, so if you have just openned your terminal and you run this command, the text printed out should be /s_home/<username>/
 
-Any command executeed in the terminal will be executed relative to your present working directory.
+Any command executed in the terminal will be executed relative to your present working directory.
 
+Example:
 ```console
 $pwd
 /s_home/<username>/
@@ -65,8 +85,9 @@ $pwd
 ---
 
 ### ls
-This command lists the files/directories that are contained in the present working directory. If you run this command in your terminal now, it should print something similar to:
+This command lists the contents of the present working directory. If you run this command in your terminal now, it should print something similar to:
 
+Example:
 ```console
 $ls
 ./
@@ -75,16 +96,23 @@ Desktop/
 public_html/
 ```
 
-Currently this command will only print the files and directories, however you can pass flags to the ls command.
+Currently this command will only print the files and directories, however you can pass extra options to a command, which are called flags.
 
-Use can use this command to list all of the files and folders including those hidden and special files/folders.
+Use can use the ls command with the 'a' flag to list all of the files and folders including those hidden and special files/folders.
 
+Example:
 ```console
 $ls -a
+./
+../
+Desktop/
+public_html/
 ```
 
-You can also list the contents of a given directory: Example:
 
+You can also list the contents of a given directory: 
+
+Example:
 ```console
 $ls Downloads
 first_download.pdf
@@ -97,6 +125,11 @@ second_file.txt
 Normally directories are named using a mixture of alpha and numeric characters. However, there are some special cases.
 The ./ directory is a directory that points to the present working directory.
 The ../ director is a directory that points to the parent of the current working directory.
+
+Example:
+```console
+
+```
 
 ---
 
