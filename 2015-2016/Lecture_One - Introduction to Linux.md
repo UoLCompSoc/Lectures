@@ -17,12 +17,18 @@ Its also easy to install along side your already existing Window Install, giving
 ### The Dock
 The bar on the left hand side of the screen contains a list of your applications that are locked to it, you can lock any application to this dock.
 
+![Screenshot of Ubuntu Desktop](screenshots/Desktop.png)
+
 ---
 
 ### The Dash
+![Screenshot of Ubuntu Dash](screenshots/Dash.png)
+
 This interface allows you to search through all of your installed applications.
 
 It can be openned by clicking the icon at the top of the dock.
+
+![Screenshot of Terminal](screenshots/Terminal.png)
 
 **_Open the dash and search for the terminal application and open it_**
 
