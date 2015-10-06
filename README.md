@@ -6,6 +6,6 @@ Any contributions are welcome; send a pull request. If you have a problem, feel 
 # Upcoming Lectures
 - [ ] Introduction to Linux
 - [ ] Java Basics (or, Java: What Your Mother Didn't Teach You)
-- [ ] Version Control and You - Introductory Git (see [https://github.com/UoLCompSoc/Lectures/2014-15](the 2014/15 lecture)).
+- [ ] Version Control and You - Introductory Git (see [the 2014/15 lecture](https://github.com/UoLCompSoc/Lectures/tree/master/2014-15)).
 - [ ] IDEs - Eclipse and More
 
