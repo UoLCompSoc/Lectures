@@ -31,28 +31,37 @@ Everything in linux is stored as a file or a directory. This includes any intern
 
 
 ### Home Directory
-The most relavent one to you is the /home/<username> directory, however on the University machines the home directory is the /s_home/<username> directory
+The most relavent one to you is the /home/<username>/directory, however on the University machines the home directory is the /s_home/<username>/directory
 
 
 ## Terminal Commands
 ### pwd
-This command prints the **P**resent **W**orking **D**irectory, so if you have just openned your terminal and you run this command, the text printed out should be /s_home/<username>
+This command prints the **P**resent **W**orking **D**irectory, so if you have just openned your terminal and you run this command, the text printed out should be /s_home/<username>/
 
 Any command executeed in the terminal will be executed relative to your present working directory.
 
+$pwd
+/s_home/<username>/
 
 ### ls
 This command lists the files/directories that are contained in the present working directory. If you run this command in your terminal now, it should print something similar to:
-.
-..
-Desktop
-Downloads
-public_html
 
-Currently this command will only print the files and directories, however you can pass a flag to the ls command.
+$ls
+./
+../
+Desktop/
+public_html/
+
+Currently this command will only print the files and directories, however you can pass flags to the ls command.
 
 Use can use this command to list all of the files and folders including those hidden and special files/folders.
 ls -a
+
+You can also list the contents of a given directory: Example:
+
+$ls Downloads
+first_download.pdf
+second_file.txt
 
 
 ### Special Directories
@@ -64,44 +73,102 @@ The ../ director is a directory that points to the parent of the current working
 ### cd
 This command allows you to change the present working directory.
 Example:
+
 $pwd
 /s_home/as784/
+
 $cd public_html
+
 $pwd
 /s_home/as784/public_html/
 
 You can also use the special directory names, the ../ is commonly used to move one director up. Example:
+
 $pwd
 /s_home/as784/public_html/
+
 $cd ..
+
 $pwd
 /s_home/as784/
 
 
 ### mkdir
 This command allows you to create a directory relative to the present working directory. Example:
+
 $ls
-Documents
-Downloads
-public_html
-$mkdir lectures
+Downloads/
+public_html/
+
+$mkdir Lectures
+
 $ls
-Documents
-Downloads
-lectures
-public_html
+Downloads/
+Lectures/
+public_html/
 
 
 ### touch
+This command creates a new file with the given name. Example:
 
+$ls
+Downloads/
+Lectures/
+public_html/
+
+$touch oldlecture
+
+$ls
+Downloads/
+Lectures/
+oldlecture
+public_html/
 
 ### mv
+This command moves the specified file/directory to the specified new location.
 
+$ls
+Downloads/
+Lectures/
+oldlecture
+public_html/
+
+$mv oldlecture Lectures/
+
+$ls
+Downloads/
+Documents/
+Lectures/
+public_html/
+
+$ls Lectures/
+oldlecture
 
 ### cp
+This command can be used to make a copy of a file or directory. Example:
 
+$cd Lectures
+
+$ls
+oldlecture
+
+$cp oldlecture newlecture
+
+$ls
+oldlecture
+newlecture
 
 ### rm
+This command can be used to remove files/directories. Example:
 
+```bash
+$ls
+newlecture
+oldlecture
 
+$rm oldlecture
 
+$ls
+newlecture
+
+```
