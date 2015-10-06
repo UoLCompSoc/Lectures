@@ -17,12 +17,18 @@ Its also easy to install along side your already existing Window Install, giving
 ### The Dock
 The bar on the left hand side of the screen contains a list of your applications that are locked to it, you can lock any application to this dock.
 
+![Screenshot of Ubuntu Desktop](screenshots/Desktop.png)
+
 ---
 
 ### The Dash
+![Screenshot of Ubuntu Dash](screenshots/Dash.png)
+
 This interface allows you to search through all of your installed applications.
 
 It can be openned by clicking the icon at the top of the dock.
+
+![Screenshot of Terminal](screenshots/Terminal.png)
 
 **_Open the dash and search for the terminal application and open it_**
 
@@ -32,6 +38,7 @@ It can be openned by clicking the icon at the top of the dock.
 This application presents you with a command line interface that allows you to execute commands on your machine.
 
 You should try to become familar with the Terminal as it plays an important part in software development. 
+
 ---
 
 ## Linux File Structure
@@ -44,6 +51,8 @@ In Linux there are no labels attached to drives of the computer, so there is no 
 Instead Linux has a filesystem that starts with just a /
 
 Beneath this root / you can have any number of files/directories.
+
+---
 
 Example:
 ```console
@@ -98,6 +107,8 @@ public_html/
 
 Currently this command will only print the files and directories, however you can pass extra options to a command, which are called flags.
 
+---
+
 Use can use the ls command with the 'a' flag to list all of the files and folders including those hidden and special files/folders.
 
 Example:
@@ -109,6 +120,8 @@ Desktop/
 public_html/
 ```
 
+---
+
 Use can use the ls command with the 'l' flag to display more details about the files/folders in the present working directory.
 
 Example:
@@ -119,6 +132,8 @@ $ls -l
 Desktop/
 public_html/
 ```
+
+---
 
 You can also list the contents of a given directory: 
 
@@ -133,8 +148,10 @@ second_file.txt
 
 ### Special Directories
 Normally directories are named using a mixture of alpha and numeric characters. However, there are some special cases.
+
 The ./ directory is a directory that points to the present working directory.
-The ../ director is a directory that points to the parent of the current working directory.
+
+The ../ directory is a directory that points to the parent of the current working directory.
 
 ---
 
@@ -155,6 +172,8 @@ $cd public_html/
 $pwd
 /s_home/as784/public_html/
 ```
+
+---
 
 You can also use the special directory names, the ../ is commonly used to move one directory upward, to the parent of the current folder. Example:
 
@@ -292,3 +311,4 @@ $ls
 newlecture
 
 ```
+
