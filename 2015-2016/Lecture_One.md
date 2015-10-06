@@ -109,6 +109,16 @@ Desktop/
 public_html/
 ```
 
+Use can use the ls command with the 'l' flag to display more details about the files/folders in the present working directory.
+
+Example:
+```console
+$ls -l
+./
+../
+Desktop/
+public_html/
+```
 
 You can also list the contents of a given directory: 
 
@@ -126,11 +136,6 @@ Normally directories are named using a mixture of alpha and numeric characters. 
 The ./ directory is a directory that points to the present working directory.
 The ../ director is a directory that points to the parent of the current working directory.
 
-Example:
-```console
-
-```
-
 ---
 
 ### cd
@@ -143,7 +148,7 @@ $pwd
 ```
 
 ```console
-$cd public_html
+$cd public_html/
 ```
 
 ```console
@@ -151,7 +156,7 @@ $pwd
 /s_home/as784/public_html/
 ```
 
-You can also use the special directory names, the ../ is commonly used to move one director up. Example:
+You can also use the special directory names, the ../ is commonly used to move one directory upward, to the parent of the current folder. Example:
 
 ```console
 $pwd
@@ -170,7 +175,7 @@ $pwd
 ---
 
 ### mkdir
-This command allows you to create a directory relative to the present working directory. Example:
+This command allows you to create a new directory relative to the present working directory. Example:
 
 ```console
 $ls
