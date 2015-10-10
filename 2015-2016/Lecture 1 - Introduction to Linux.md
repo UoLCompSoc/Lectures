@@ -70,7 +70,7 @@ Everything in linux is stored as a file or a directory. This includes any intern
 ---
 
 ### Home Directory
-The most relavent one directory to you is your home directory, is has the path /home/<username>/, however on the University machines the home directory is the /s_home/<username>/
+The most relavent one directory to you is your home directory, is has the path /home/&lt;username&gt;, however on the University machines the home directory is the /s_home/&lt;username&gt;/
 
 This is where you will do all of your work and where all of your documents are stored.
 
@@ -81,7 +81,7 @@ This is where you will do all of your work and where all of your documents are s
 ---
 
 ### pwd
-This command prints the **P**resent **W**orking **D**irectory, so if you have just openned your terminal and you run this command, the text printed out should be /s_home/<username>/
+This command prints the **P**resent **W**orking **D**irectory, so if you have just openned your terminal and you run this command, the text printed out should be /s_home/&lt;username&gt;/
 
 Any command executed in the terminal will be executed relative to your present working directory.
 
