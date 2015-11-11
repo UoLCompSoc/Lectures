@@ -6,7 +6,7 @@ You can do so using the 'man example' command, where 'example' is the command yo
 
 For each of the following create a single command that can:
 
-1. List the files and driectories in your home directory and sote the results in a file called 'task1.txt'
+1. List the files and directories in your home directory and sort the results in a file called 'task1.txt'
 
 2. List all of the files and directories in your home directory including all those that are hidden, and store the result in a file called 'task2.txt'
 
@@ -23,4 +23,4 @@ Hint: You will need to make use of the 'test' command
 7. List the files and directories in your home directory, and output this to the file 'task7p1.txt'. 
 Then add the folder 'example' in your home directory.
 Again list the files and directories in your home directory, and output this to the file 'task7p2.txt'.
-Using the diff tool compare these two files and output the difference to the file 'task7.txt' 
+Using the diff command to compare these two files and output the difference to the file 'task7.txt' 
