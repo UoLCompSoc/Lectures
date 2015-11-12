@@ -5,31 +5,31 @@
 ## What is Linux?
 Linux is an alternative to the Windows operating system. It comes in lots of different versions and the version that we use here at university is called **Ubuntu**.
 
-Ubuntu is a piece of free and open source software that we highly recommend that you get familiar with, as you will be using it on a day to day basis whilst you are in labs.
+Ubuntu is a piece of free and open source software that we highly recommend that you get familiar with, as you will be using it on a day to day basis whilst you're in labs.
  
 ---
 
-## What is open source software
-Open source software is computer software that has made it's source code available so that you may look at it, modify it and redistribute it, in accordance with the license attached. Which is normally the GPL (General Public License), granting you the right to do almost anything with the software as long as you include the original license.
+## Open Source Software
+Open source software is computer software that has made it's source code available so that you may look at it, modify it and redistribute it, in accordance with the license distributed with the code. An example is the GPL (GNU General Public License), granting you the right to do almost anything with the software as long as you include the original license and make your source code open as well.
 
 ---
 
 ## Advantages of Ubuntu
 
-Its easy to install along side your already existing Window Install, giving you a great programming environment that is very similar to the University's but still with easy access to your existing files.
+- Easy to install along side your already existing Windows install, giving you a great programming environment that is very similar to the University's but still with easy access to your existing files.
 
-Its very customisable, you don't like the applications installed, change them. You don't like the ways the applications are displayed on screen, change your display manager. Almost anything and everything is customisable.
+- Very customisable; don't like the applications installed? Change them! You don't like the ways the applications are displayed on screen? Change your display manager. Almost anything and everything is customisable.
 
 ---
 
 ## Basic Overview of Ubuntu
 
-We will be using the Unity User Interface in all of the demonstrations and descriptions as it is the default on the university computers.
+We will be using the Unity User Interface in all of the demonstrations and descriptions as it's the default on the university computers. That said, we suggest you also play with others to see what you like; both "Gnome" and "XFCE" are available in labs too.
 
 ---
 
 ### The Dock
-The bar on the left hand side of the screen contains a list of your applications that are locked to it, you can lock any application to this dock.
+The bar on the left hand side of the screen contains a list of your applications that are locked to it; you can lock any application to this dock.
 
 ![Screen shot of Ubuntu Desktop](http://imgur.com/4JerWEv.png)
 
@@ -47,7 +47,7 @@ It can be opened by clicking the icon at the top of the dock.
 ### The Terminal
 This application presents you with a command line interface that allows you to execute commands on your machine.
 
-You should try to become familiar with the Terminal as it plays an important part in software development, and used heavily during your degree. 
+You should try to become familiar with the Terminal as it plays an important part in software development, and will be used heavily during your degree. 
 
 Shortcut: Ctrl + Alt + T
 
@@ -63,7 +63,7 @@ Linux has a tree structure, similar to that of Windows machines.
 
 In Linux there are no labels attached to drives of the computer, so there is no C:\ or D:\ or E:\ drive. 
 
-Instead Linux has a filesystem that starts with just a '/'
+Instead Linux has a filesystem that starts with just a '/' (the "root directory")
 
 Beneath this '/' at the top of the tree, you can have any number of files/directories.
 
@@ -80,12 +80,12 @@ Example:
 /tmp/
 ```
 
-Everything in linux is stored as a file or a directory. This includes any internal and external devices attached to the computer, for example, internal hard drives are stored as /dev/sda, /dev/sdb, etc.
+Everything in linux is stored as a file or a directory. This includes any internal and external devices attached to the computer, for example, internal hard drives are usually stored as /dev/sda, /dev/sdb, etc.
 
 ---
 
 ### Home Directory
-The most relevant one directory to you is your home directory, is has the path /home/&lt;username&gt;, however on the University machines the home directory is the /s_home/&lt;username&gt;/
+The most relevant directory to you is probably your home directory, which usually has the path /home/&lt;username&gt;, however on the University machines the home directory is located at /s_home/&lt;username&gt;/
 
 This is where all of your documents are stored and where you will do all of your work for University.
 This is very similar to the C:\Users\&lt;username&gt; directory on Windows.
@@ -97,15 +97,15 @@ Normally directories are named using a mixture of alpha and numeric characters. 
 
 Any file or directory prefixed with a '.', like the '.mozilla' directory or the '.bashrc' file will be hidden by default in the file browser.
 
-The ./ directory is a directory that points to the present working directory.
+The . directory is a directory that points to the present working directory.
 
-The ../ directory is a directory that points to the parent of the current working directory.
+The .. directory is a directory that points to the parent of the current working directory.
 
 ---
 
 ## Terminal Commands
 
-You can type commands and tell the computer what to do.
+In the terminal you type commands to execute programs, often with extra arguments added.
 
 ---
 
@@ -197,7 +197,7 @@ $pwd
 
 ---
 
-You can also use the special directory names, the ../ is commonly used to move one directory upward, to the parent of the current folder. Example:
+You can also use the special directory names: ../ is commonly used to move one directory upward, to the parent of the current folder. Example:
 
 ```console
 $pwd
